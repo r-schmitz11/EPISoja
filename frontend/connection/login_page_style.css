@@ -1,0 +1,157 @@
+h1 {
+    position: absolute;
+    font-size: 40px;
+    top: 10%;
+}
+
+body {
+    background: linear-gradient(to right, #c6c7ca, #7787df);
+}
+
+.container {
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    position: absolute;
+    margin: auto;
+    top: 0; right: 0; left: 0; bottom: 0;
+    height: 600px;
+    width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#email {
+    position: absolute;
+    background-image: url("../img/user.png");
+    background-size:25px;
+    background-position-x: 4%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    position: relative;
+    top: 38%;
+}
+
+#password {
+    background-image: url("../img/lock.png");
+    background-size:32px;
+    background-position-x: 3%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    position: relative;
+    top: 42%;
+}
+
+#email, #password {
+    border: none;
+    height: 50px;
+    width: 300px;
+    font-size: 14pt;
+    border-radius: 10px;
+    background-color: #eee;
+    color: #000;
+}
+
+input#email:focus, input#password:focus {
+    outline: none;
+    background-image:none;
+    text-indent:1px
+}
+
+.hide {
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border-radius: 190px 25px 25px 150px;
+    right: 0;
+    background-color: #512da8;
+    background: linear-gradient(to right, #5c6bc0, #512da8);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+}
+
+.hide button {
+    height: 45px;
+    width: 170px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 17px;
+    outline: solid 1px white;
+}
+
+.hide button:hover {
+    background-color: rgb(58, 58, 158);
+    cursor: pointer;
+}
+
+.hide.active {
+    background: linear-gradient(to right, #512da8,#5c6bc0);
+    transform: translateX(-100%);
+    transition: all 0.6s ease-in-out;
+    border-radius: 25px 150px 190px 25px;
+}
+
+.signin {
+    position: relative;
+    border: none;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    position: relative;
+    height: 600px;
+    width: 450px;
+    float: left;
+}
+
+.signup {
+    border: none;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    height: 600px;
+    width: 450px;
+    float: right;
+}
+
+.signin_box {
+    display: none;
+}
+
+.signin_box.active {
+    display: inline;
+}
+
+.signup_box.active {
+    display: none;
+}
+
+.login {
+    margin: 0;
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    right: 22%;
+    top: 70%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    box-shadow: 3px 3px 1px rgb(121, 120, 120);
+}
+
+.login:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 1px rgb(121, 120, 120);
+}
