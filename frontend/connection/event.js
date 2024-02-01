@@ -15,23 +15,3 @@ loginBtn.addEventListener('click', () => {
     registerBtn.classList.remove("active");
     document.getElementById("hide_box").innerHTML = "Don't have an account?";
 });
-
-const signinBtn = document.getElementById("login");
-const signupBtn = document.getElementById("register");
-
-
-// signinBtn.addEventListener('click', () => {
-//     var input = document.getElementById("email").value.trim();
-
-//     alert("bojnour");
-//     if (!input.length) {
-//         signinBtn.disabled = true;
-//     }
-//     signinBtn.disabled = false;
-// });
-
-// function clickFunction() {
-
-
-//     alert(input.length);
-// }

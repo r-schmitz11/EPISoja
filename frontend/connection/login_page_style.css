@@ -54,8 +54,8 @@ body {
     background-position-y: center;
     background-repeat: no-repeat;
     text-indent: 40px;
-    position: relative;
-    top: 34%;
+    top: 30%;
+    right: 15%;
 }
 
 .signup #username {
@@ -66,19 +66,20 @@ body {
     background-position-y: center;
     background-repeat: no-repeat;
     text-indent: 40px;
-    position: relative;
-    top: 38%;
+    top: 42%;
+    right: 15%;
 }
 
 .signup #password2 {
+    position: absolute;
     background-image: url("../img/lock.png");
     background-size:32px;
     background-position-x: 3%;
     background-position-y: center;
     background-repeat: no-repeat;
     text-indent: 40px;
-    position: relative;
-    top: 42%;
+    top: 54%;
+    right: 15%;
 }
 
 input {
