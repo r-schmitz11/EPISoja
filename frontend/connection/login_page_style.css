@@ -22,7 +22,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#email {
+.signin #email {
     position: absolute;
     background-image: url("../img/user.png");
     background-size:25px;
@@ -34,7 +34,7 @@ body {
     top: 38%;
 }
 
-#password {
+.signin #password {
     background-image: url("../img/lock.png");
     background-size:32px;
     background-position-x: 3%;
@@ -45,7 +45,40 @@ body {
     top: 42%;
 }
 
-#email, #password {
+.signup #email {
+    position: absolute;
+    background-image: url("../img/user.png");
+    background-size:25px;
+    background-position-x: 4%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    position: relative;
+    top: 34%;
+}
+
+.signup #username {
+    background-size:32px;
+    background-position-x: 3%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 4px;
+    position: relative;
+    top: 38%;
+}
+
+.signup #password {
+    background-image: url("../img/lock.png");
+    background-size:32px;
+    background-position-x: 3%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent: 40px;
+    position: relative;
+    top: 42%;
+}
+
+#email, #password, #username{
     border: none;
     height: 50px;
     width: 300px;
@@ -55,7 +88,7 @@ body {
     color: #000;
 }
 
-input#email:focus, input#password:focus {
+input#email:focus, input#password:focus, input#username:focus {
     outline: none;
     background-image:none;
     text-indent:1px
@@ -108,15 +141,16 @@ input#email:focus, input#password:focus {
     justify-content: center;
     text-align: center;
     display: flex;
-    position: relative;
     height: 600px;
     width: 450px;
     float: left;
 }
 
 .signup {
+    position: relative;
     border: none;
     justify-content: center;
+    text-align: center;
     display: flex;
     position: relative;
     height: 600px;
@@ -152,6 +186,26 @@ input#email:focus, input#password:focus {
 }
 
 .login:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 1px rgb(121, 120, 120);
+}
+
+.register {
+    margin: 0;
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    right: 22%;
+    top: 75%;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    box-shadow: 3px 3px 1px rgb(121, 120, 120);
+}
+
+.register:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 1px rgb(121, 120, 120);
 }
