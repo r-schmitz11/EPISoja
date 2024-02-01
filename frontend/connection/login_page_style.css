@@ -24,31 +24,32 @@ body {
 
 .signin #email {
     position: absolute;
-    background-image: url("../img/user.png");
-    background-size:25px;
+    background-image: url("../img/mail.png");
+    background-size:27px;
     background-position-x: 4%;
     background-position-y: center;
     background-repeat: no-repeat;
     text-indent: 40px;
-    position: relative;
-    top: 38%;
+    top: 35%;
+    right: 15%;
 }
 
 .signin #password {
+    position: absolute;
     background-image: url("../img/lock.png");
     background-size:32px;
     background-position-x: 3%;
     background-position-y: center;
     background-repeat: no-repeat;
     text-indent: 40px;
-    position: relative;
-    top: 42%;
+    top: 49%;
+    right: 15%;
 }
 
-.signup #email {
+.signup #email2 {
     position: absolute;
-    background-image: url("../img/user.png");
-    background-size:25px;
+    background-image: url("../img/mail.png");
+    background-size:27px;
     background-position-x: 4%;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -58,16 +59,18 @@ body {
 }
 
 .signup #username {
-    background-size:32px;
+    position: absolute;
+    background-image: url("../img/user.png");
+    background-size:25px;
     background-position-x: 3%;
     background-position-y: center;
     background-repeat: no-repeat;
-    text-indent: 4px;
+    text-indent: 40px;
     position: relative;
     top: 38%;
 }
 
-.signup #password {
+.signup #password2 {
     background-image: url("../img/lock.png");
     background-size:32px;
     background-position-x: 3%;
@@ -78,7 +81,7 @@ body {
     top: 42%;
 }
 
-#email, #password, #username{
+input {
     border: none;
     height: 50px;
     width: 300px;
@@ -88,7 +91,8 @@ body {
     color: #000;
 }
 
-input#email:focus, input#password:focus, input#username:focus {
+input#email:focus, input#password:focus, input#username:focus,
+input#email2:focus, input#password2:focus {
     outline: none;
     background-image:none;
     text-indent:1px
@@ -208,4 +212,20 @@ input#email:focus, input#password:focus, input#username:focus {
 .register:hover {
     transform: scale(1.05);
     box-shadow: 5px 5px 1px rgb(121, 120, 120);
+}
+
+/* bottom page */
+
+.bottom_page {
+    position: absolute;
+    text-align: center;
+    bottom: 20px; right: 0; left: 0;
+}
+
+.aboutus, .language {
+    border: none;
+    font-size: 15px;
+    background-color: transparent;
+    color: rgb(54, 53, 53);
+    cursor: pointer;
 }

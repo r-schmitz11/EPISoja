@@ -9,28 +9,28 @@
     <body>
         <div class="container">
             <div class="signin">
-                <h1>Sign In</h1>
+                <h1 id="signin_h1">Sign In</h1>
                 <div class="entry">
-                    <input type="email" id="email" placeholder="Email">
-                    <input type="password" id="password" placeholder="Password">
-                    <div class="button">
-                        <form action="../site/menu.html">
-                            <button class="login" id="login">SIGN IN</button>
-                        </form>
-                    </div>
+                    <form action="../site/menu.html" class="entry1">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <div class="button">
+                            <button type="submit" class="login" id="login">SIGN IN</button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="signup">
-                <h1>Create account</h1>
+                <h1 id="signup_h1">Create account</h1>
                 <div class="entry">
-                    <input type="text" id="email" placeholder="Email">
+                    <input type="text" id="email2" placeholder="Email">
                     <input type="text" id="username" placeholder="Username">
-                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="password2" placeholder="Password">
                 </div>
                 <div class="button">
-                    <form action="../site/menu.html">
-                        <button class="register" id="register">SIGN UP</button>
-                    </form>
+                    <!-- <form action="../site/menu.html"> -->
+                    <button type="submit" class="register" id="register">SIGN UP</button>
+                    <!-- </form> -->
                 </div>
             </div>
             <div class="hide" id="hide">
@@ -39,6 +39,15 @@
                 <button class="signin_box" id="signin_box">SIGN IN</button>
             </div>
         </div>
+        <div class="bottom_page">
+            <button class="aboutus" id="aboutus">About us</button>
+            <span>•</span>
+            <select class="language" id="lang" onchange=changeLang()>
+              <option value="english">English</option>
+              <option value="french">Français</option>
+            </select>
+        </div>
         <script src="event.js"></script>
+        <script src="switch_lang.js"></script>
     </body>
 </html>
