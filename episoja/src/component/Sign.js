@@ -22,7 +22,7 @@ function Sign() {
       </div>
       <div className="relative w-full h-full bg-white rounded-r-3xl float-right grid grid-rows-3 grid-flow-row place-items-center col-start-2">
         <div className="row-start-1">
-          <h1 className="text-4xl text-center">Create your account</h1>
+          <h1 className="text-4xl text-center" id='create'>Create your account</h1>
         </div>
         <div className="row-start-2">
           <form className="grid grid-rows-3 place-items-center gap-3" method="get" id="signup">
