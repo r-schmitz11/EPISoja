@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+#panel {
+    border-radius: 190px 25px 25px 150px;
+    background: linear-gradient(to right, #5c6bc0, #512da8);
+    left: 50%;
+}
+
+#panel.active {
+    border-radius: 25px 190px 150px 25px;
+    background: linear-gradient(to right, #512da8,#5c6bc0);
+    left: 0;
+}
+
+#container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
