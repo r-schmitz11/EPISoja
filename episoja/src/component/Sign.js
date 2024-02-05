@@ -1,4 +1,5 @@
 import SwitchPanel from './SwitchPanel';
+import { Link } from 'react-router-dom';
 
 function Sign() {
   return (
@@ -14,7 +15,9 @@ function Sign() {
           </form>
         </div>
         <div className="row-start-3">
-          <button className="bg-[#000] text-white h-10 w-40 hover:scale-105 hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] rounded-md" form="sigin" value="submit">SIGN IN</button>
+          <Link to="./Site">
+            <button className="bg-[#000] text-white h-10 w-40 hover:scale-105 hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] rounded-md" form="sigin" value="submit">SIGN IN</button>
+          </Link>
         </div>
       </div>
       <div className="relative w-full h-full bg-white rounded-r-3xl float-right grid grid-rows-3 grid-flow-row place-items-center col-start-2">
@@ -29,7 +32,9 @@ function Sign() {
           </form>
         </div>
         <div className="row-start-3">
-          <button className="bg-[#000] text-white h-10 w-40 hover:scale-105 hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] rounded-md" form="sigup" value="submit">SIGN UP</button>
+          <Link to="./Site">
+            <button className="bg-[#000] text-white h-10 w-40 hover:scale-105 hover:shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] rounded-md" form="sigup" value="submit">SIGN UP</button>
+          </Link>
         </div>
       </div>
       <SwitchPanel/>
