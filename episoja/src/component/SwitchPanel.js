@@ -1,7 +1,3 @@
-// document.getElementById("signup-box").addEventListener('clock', () => {
-//     document.getElementById("panel-right").classList.add("active");
-// })
-
 import React, { useState } from "react";
 
 function SwitchPanel() {
@@ -11,16 +7,19 @@ function SwitchPanel() {
         const panel = document.getElementById("panel");
         const button_panel = document.getElementById("button-panel");
         const p = document.getElementById("p");
+        const create = document.getElementById("create");
 
         setToggle(pre => !pre);
         if (!toggle) {
             panel.classList.remove("active");
             p.innerHTML = "Don't have an account ?"
             button_panel.innerHTML = "SIGN UP";
+            create.hidden = true;
         } else {
             panel.classList.add("active");
             p.innerHTML = "Have an account ?";
             button_panel.innerHTML = "SIGN IN";
+            create.hidden = false;
         }
     }
     return (
