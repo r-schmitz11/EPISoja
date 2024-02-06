@@ -19,7 +19,7 @@ function SwitchPanel() {
             button_panel.innerHTML = "SIGN UP";
         } else {
             panel.classList.add("active");
-            p.innerHTML = "have an account ?";
+            p.innerHTML = "Have an account ?";
             button_panel.innerHTML = "SIGN IN";
         }
     }
